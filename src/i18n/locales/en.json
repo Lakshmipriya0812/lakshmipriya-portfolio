@@ -2,8 +2,19 @@
   "meta": {
     "title": "Lakshmipriya R | DevOps & Cloud Engineering",
     "description": "DevOps engineer working across infrastructure automation, Kubernetes, CI/CD, production validation, and cloud systems."
-  },
+  }, 
 
+  "intro": {
+    "subtitle": "DEVOPS PORTFOLIO",
+    "title": "Building. Automating. Deploying.",
+    "skip": "Skip Intro",
+    "progressLabel": "Portfolio loading progress",
+    "stages": {
+      "azure": "Initializing Cloud Infrastructure",
+      "automation": "Loading CI/CD Automation",
+      "interface": "Preparing Portfolio Experience"
+    }
+  },
   "navigation": {
     "home": "Home",
     "about": "About",

@@ -15,6 +15,7 @@ export const PortfolioPreloader = ({
   onSkip,
 }: PortfolioPreloaderProps) => {
   const { t } = useTranslation();
+
   const stages = [
     t("intro.stages.azure"),
     t("intro.stages.automation"),
@@ -34,16 +35,18 @@ export const PortfolioPreloader = ({
           <div role="status" aria-live="polite" className="space-y-3">
             <div className="inline-flex items-center gap-3 rounded-full border border-[var(--color-border)] bg-[rgba(255,255,255,0.03)] px-4 py-2">
               <span className="font-mono text-lg tracking-[0.24em] text-[var(--color-text)]">
-                PJ
+                Priya
               </span>
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[rgba(47,140,255,0.14)] text-[var(--color-cyan)]">
                 <Cloud className="h-4 w-4" aria-hidden="true" />
               </span>
             </div>
+
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.24em] text-[var(--color-cyan)]">
                 {t("intro.subtitle")}
               </p>
+
               <h2 className="mt-2 text-2xl font-semibold text-[var(--color-text)] sm:text-3xl">
                 {t("intro.title")}
               </h2>
@@ -83,9 +86,11 @@ export const PortfolioPreloader = ({
                   ].join(" ")}
                   aria-hidden="true"
                 />
+
                 <span className="text-sm text-[var(--color-text)]">
                   {stage}
                 </span>
+
                 {isComplete ? (
                   <span className="ml-auto text-xs text-[var(--color-cyan)]">
                     ✓
@@ -112,6 +117,7 @@ export const PortfolioPreloader = ({
               />
             </div>
           </div>
+
           <span
             className="font-mono text-sm text-[var(--color-text-muted)]"
             aria-hidden="true"
