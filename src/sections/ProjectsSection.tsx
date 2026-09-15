@@ -1,7 +1,6 @@
 import { Container } from "../components/common/Container";
 import { CaseStudyCard } from "../components/case-studies/CaseStudyCard";
 import { caseStudies } from "../data/caseStudies";
-import {SectionHeading} from "../components/common/SectionHeading";
 
 export const ProjectsSection = () => (
   <section id="projects" className="featured-work-section">
