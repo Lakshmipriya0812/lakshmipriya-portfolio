@@ -1,7 +1,7 @@
 export type SectionId =
   | "home"
   | "about"
-  | "Featured Work"
+  | "projects"
   | "expertise"
   | "experience"
   | "certifications"
