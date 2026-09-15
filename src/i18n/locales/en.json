@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "title": "Lakshmipriya R | DevOps & Cloud Engineering",
+    "description": "DevOps engineer working across infrastructure automation, Kubernetes, CI/CD, production validation, and cloud systems."
+  },
+
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "expertise": "What I Work With",
+    "experience": "Experience",
+    "certifications": "Certifications",
+    "projects": "Featured Work",
+    "academic": "Education",
+    "contact": "Contact",
+    "brand": "DEVOPS"
+  },
+
+  "hero": {
+    "eyebrow": "DEVOPS • CLOUD • AUTOMATION",
+    "hello": "Hi, I'm",
+    "name": "Lakshmipriya",
+    "headline": "I automate the work that slows engineering teams down.",
+    "description": "I work across infrastructure, deployment pipelines, production testing, and cloud systems. My recent work includes turning multi-day VM provisioning into a one-click workflow, scaling environment validation from 3 to 175+ customers, and building systems that expose configuration and data inconsistencies before they become bigger problems.",
+    "featuredProject": "See what I built",
+    "contactButton": "Get in touch",
+    "location": "Philadelphia, PA • Open to relocation",
+    "profileLabel": "Current focus",
+    "profileTitle": "DevOps / SRE / Platform Engineering",
+    "profileDetail": "Infrastructure automation, Kubernetes, CI/CD, testing, and cloud operations."
+  },
+
+  "about": {
+    "title": "A little about how I work",
+    "subtitle": "I like taking messy operational processes and figuring out how to make them predictable.",
+    "paragraph1": "I'm a software and DevOps engineer working across cloud infrastructure, automation, testing, and application development. At AssetWorks, I work with the hosting team on systems that support customer environments in production.",
+    "paragraph2": "A lot of my work starts with a process that has too many manual steps: provisioning a VM, checking an environment after maintenance, comparing configuration across servers, or verifying that data reached the reporting layer correctly. I turn those processes into workflows, pipelines, and checks that can be run consistently.",
+    "paragraph3": "I also enjoy the infrastructure side of engineering—Kubernetes, AWS, Linux, networking, containers, observability, and CI/CD. When something breaks, I want to understand the path that led there and make the next occurrence easier to detect or prevent.",
+    "facts": [
+      "1.2+ years of internship experience",
+      "DevOps & cloud infrastructure",
+      "Kubernetes, AWS & CI/CD",
+      "Automation & production testing"
+    ]
+  },
+
+  "expertise": {
+    "title": "What I work with",
+    "subtitle": "A mix of infrastructure, automation, testing, and software development.",
+    "cards": {
+      "cloud": {
+        "title": "Infrastructure & Cloud",
+        "description": "AWS, Kubernetes, EC2, VPC networking, Windows infrastructure, VM provisioning, Terraform, and infrastructure automation."
+      },
+      "cicd": {
+        "title": "Pipelines & Delivery",
+        "description": "Azure DevOps, CI/CD pipelines, automated testing, Docker, deployment workflows, maintenance runs, and environment upgrades."
+      },
+      "ops": {
+        "title": "Production & Validation",
+        "description": "Synthetic testing, configuration drift detection, workflow validation, monitoring, dashboards, log processing, and failure-path testing."
+      },
+      "automation": {
+        "title": "Software & Automation",
+        "description": "Python, C#, JavaScript, TypeScript, React, APIs, automation scripts, data pipelines, and AI-powered applications."
+      }
+    }
+  },
+
+  "experience": {
+    "title": "Where I've worked",
+    "subtitle": "Three internships across DevOps, cloud infrastructure, and software engineering.",
+    "items": {
+      "assetworks": {
+        "title": "DevOps Intern",
+        "dates": "May 2026 - Present",
+        "description": "Working with the hosting team on production infrastructure and customer environments. Built an end-to-end VM provisioning workflow with ManageIQ and embedded Ansible, reducing provisioning from a previous 7-day process to approximately 14 minutes. Scaled automated synthetic and sanity validation from 3 customers to 175+ environments and built configuration-driven maintenance workflows."
+      },
+      "epilogue": {
+        "title": "DevOps Engineer Intern",
+        "dates": "September 2025 - March 2026",
+        "description": "Worked on AWS and Kubernetes infrastructure, including EKS, Docker, NGINX Ingress, ALB, HPA, rolling deployments, EC2, and VPC security. Built Airflow pipelines for millions of multi-service logs per day, added anomaly detection and Grafana visibility, and reduced AWS CloudWatch spending from $700 to $450 per month."
+      },
+      "techavidity": {
+        "title": "Software Engineer Intern",
+        "dates": "May 2025 - August 2025",
+        "description": "Built features for a full-stack SaaS application using React and TypeScript. Developed reusable components, testing and CI/CD workflows, and integrated Neo4j graph algorithms that reduced patient referral processing time by 25%."
+      }
+    }
+  },
+
+  "academic": {
+    "title": "Education and academic background",
+    "subtitle": "Academic training supporting software engineering, application development, and cloud-focused work.",
+    "education": {
+      "title": "Education",
+      "items": {
+        "master": {
+          "title": "Master of Science, Software Engineering",
+          "institution": "Drexel University",
+          "period": "Philadelphia, PA • September 2023 - March 2025"
+        },
+        "bachelor": {
+          "title": "Bachelor of Technology, Information Technology",
+          "institution": "Sona College of Technology",
+          "period": "Salem, India • September 2018 - June 2022"
+        }
+      }
+    },
+    "linkedin": {
+      "title": "LinkedIn Activity",
+      "description": "Follow my LinkedIn profile for posts about DevOps, cloud infrastructure, production validation, automation, and engineering projects. Specific post links can be curated here later.",
+      "button": "View LinkedIn profile"
+    }
+  },
+
+  "certifications": {
+    "title": "Certifications and courses",
+    "subtitle": "Verified technical credentials and professional learning.",
+    "certificationsTitle": "Certifications",
+    "certificationLinkLabel": "Open certification {{name}}",
+    "courseLinkLabel": "Open course {{name}}",
+    "courses": {
+      "title": "Completed courses",
+      "itemsCount": "{{count}} items",
+      "categories": {
+        "cloudDevOpsSystems": "Cloud, DevOps and systems",
+        "databasesAnalytics": "Databases and analytics",
+        "processAutomation": "Process automation"
+      }
+    }
+  },
+
+  "projects": {
+    "eyebrow": "03",
+    "title": "Featured Work",
+    "subtitle": "The production problems I've worked on—and the systems I built or tested to solve them.",
+
+    "vmCreation": {
+      "title": "One-click VM Creation Automation",
+      "tagline": "Turning a multi-day provisioning process into a repeatable infrastructure workflow.",
+      "description": "Designed and implemented the VM provisioning workflow end-to-end with ManageIQ and embedded Ansible. The workflow validates the request, evaluates hypervisors, reserves an IP through OP ManageCentral, provisions a golden Windows VM, handles DNS and IP transactions, applies configuration, and validates the result. The previous process could take 7 days; the automated workflow provisions a VM in approximately 14 minutes."
+    },
+
+    "syntheticTesting": {
+      "title": "Synthetic & Sanity Testing",
+      "tagline": "Taking post-maintenance validation from 3 customers to 175+ environments.",
+      "description": "Designed and executed automated validation using Azure DevOps, C#, and Playwright. The system checks login behavior, application access, database connectivity, and customer-specific success signals. Customer configuration was moved out of code so new environments could be onboarded without rewriting the tests, with grouped runs supporting large maintenance windows."
+    },
+
+    "configurationDrift": {
+      "title": "Configuration Drift Detection",
+      "tagline": "Finding the server that doesn't match the rest.",
+      "description": "Implemented a configuration comparison system for WinRM-connected Windows servers using Python, PowerShell, Shell, and JavaScript. Rather than relying on manual file inspection, the system uses hashing, parsing, and comparison to identify differences across server state. A fan-out/fan-in workflow processes multiple servers and surfaces customer-specific drift through dashboards for shared and dedicated environments."
+    },
+
+    "databaseWorkflow": {
+      "title": "Primary-to-Reporting Database Workflow Validation",
+      "tagline": "Following an order from the primary database to the reporting layer.",
+      "description": "Designed and executed end-to-end testing for the automated synchronization path between the Primary Database and Reporting Database. Tests covered order creation, primary writes, workflow execution, data transfer, reporting updates, consistency, customer access, failure scenarios, and isolation of the production data layer."
+    },
+
+    "featured": {
+      "title": "AI Product Discovery Assistant",
+      "tagline": "An LLM-powered search experience built around ranking and relevance.",
+      "description": "Built RESTful FastAPI services and an AI-powered product discovery workflow supporting 100+ concurrent queries. Added ranking and relevance logic, automated CI/CD, 85% backend test coverage, and Docker-based deployment."
+    },
+
+    "networkLab": {
+      "title": "AI-Powered Personal Portfolio",
+      "tagline": "A portfolio that can answer questions about the work behind it.",
+      "description": "Built a full-stack portfolio with embeddings, vector retrieval, conversational AI, API authentication, rate limiting, logging, and production deployment."
+    }
+  },
+
+  "contact": {
+    "title": "Have an infrastructure problem worth automating?",
+    "description": "I'm looking for DevOps, SRE, Platform Engineering, and Cloud Engineering opportunities where I can work close to infrastructure, automation, and production systems.",
+    "button": "VIEW GITHUB",
+    "linkedinButton": "CONNECT ON LINKEDIN",
+    "emailButton": "EMAIL ME"
+  },
+
+  "footer": {
+    "copyright": "© 2026 Lakshmipriya",
+    "backToTop": "Back to top"
+  }
+}
