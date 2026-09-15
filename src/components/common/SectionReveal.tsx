@@ -6,10 +6,9 @@ import { usePrefersReducedMotion } from "../../hooks/usePrefersReducedMotion";
 type RevealVariant =
   | "about"
   | "expertise"
-  | "certifications"
   | "experience"
   | "projects"
-  | "academic"
+  | "qualifications"
   | "contact";
 
 interface SectionRevealProps
@@ -31,10 +30,6 @@ const revealStates: Record<
     hidden: { opacity: 0, y: 18 },
     visible: { opacity: 1, y: 0 },
   },
-  certifications: {
-    hidden: { opacity: 0, y: 18 },
-    visible: { opacity: 1, y: 0 },
-  },
   experience: {
     hidden: { opacity: 0, y: 18 },
     visible: { opacity: 1, y: 0 },
@@ -43,7 +38,7 @@ const revealStates: Record<
     hidden: { opacity: 0, y: 18 },
     visible: { opacity: 1, y: 0 },
   },
-  academic: {
+  qualifications: {
     hidden: { opacity: 0, y: 18 },
     visible: { opacity: 1, y: 0 },
   },
@@ -68,7 +63,7 @@ export const SectionReveal = ({
       initial={reducedMotion ? false : revealStates[variant].hidden}
       whileInView={reducedMotion ? undefined : revealStates[variant].visible}
       animate={reducedMotion ? revealStates[variant].visible : undefined}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: "some" }}
       transition={{ duration: 0.55, ease: "easeOut" }}
     >
       {children}

@@ -4,8 +4,7 @@ export type SectionId =
   | "projects"
   | "expertise"
   | "experience"
-  | "certifications"
-  | "academic"
+  | "qualifications"
   | "contact";
 
 export const navigation = [
@@ -14,7 +13,6 @@ export const navigation = [
   { id: "projects", labelKey: "navigation.projects" },
   { id: "expertise", labelKey: "navigation.expertise" },
   { id: "experience", labelKey: "navigation.experience" },
-  { id: "certifications", labelKey: "navigation.certifications" },
-  { id: "academic", labelKey: "navigation.academic" },
+  { id: "qualifications", labelKey: "navigation.qualifications" },
   { id: "contact", labelKey: "navigation.contact" },
 ] as const;

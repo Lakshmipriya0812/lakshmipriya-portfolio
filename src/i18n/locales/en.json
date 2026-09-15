@@ -2,7 +2,7 @@
   "meta": {
     "title": "Lakshmipriya R | DevOps & Cloud Engineering",
     "description": "DevOps engineer working across infrastructure automation, Kubernetes, CI/CD, production validation, and cloud systems."
-  }, 
+  },
 
   "intro": {
     "subtitle": "DEVOPS PORTFOLIO",
@@ -20,9 +20,8 @@
     "about": "About",
     "expertise": "What I Work With",
     "experience": "Experience",
-    "certifications": "Certifications",
     "projects": "Featured Work",
-    "academic": "Education",
+    "qualifications": "Qualifications",
     "contact": "Contact",
     "brand": "DEVOPS"
   },
@@ -100,9 +99,15 @@
     }
   },
 
-  "academic": {
-    "title": "Education and academic background",
-    "subtitle": "Academic training supporting software engineering, application development, and cloud-focused work.",
+  "caseStudies": {
+    "eyebrow": "02",
+    "title": "Production Engineering Case Studies",
+    "subtitle": "Five production engineering initiatives spanning infrastructure automation, proactive validation, configuration management, data workflow integrity, and cloud platform engineering."
+  },
+
+  "qualifications": {
+    "title": "Education and certifications",
+    "subtitle": "Academic training and verified technical credentials supporting my DevOps and software engineering work.",
     "education": {
       "title": "Education",
       "items": {
@@ -118,69 +123,10 @@
         }
       }
     },
-    "linkedin": {
-      "title": "LinkedIn Activity",
-      "description": "Follow my LinkedIn profile for posts about DevOps, cloud infrastructure, production validation, automation, and engineering projects. Specific post links can be curated here later.",
-      "button": "View LinkedIn profile"
-    }
-  },
-
-  "certifications": {
-    "title": "Certifications and courses",
-    "subtitle": "Verified technical credentials and professional learning.",
-    "certificationsTitle": "Certifications",
-    "certificationLinkLabel": "Open certification {{name}}",
-    "courseLinkLabel": "Open course {{name}}",
-    "courses": {
-      "title": "Completed courses",
-      "itemsCount": "{{count}} items",
-      "categories": {
-        "cloudDevOpsSystems": "Cloud, DevOps and systems",
-        "databasesAnalytics": "Databases and analytics",
-        "processAutomation": "Process automation"
-      }
-    }
-  },
-
-  "projects": {
-    "eyebrow": "03",
-    "title": "Featured Work",
-    "subtitle": "The production problems I've worked on—and the systems I built or tested to solve them.",
-
-    "vmCreation": {
-      "title": "One-click VM Creation Automation",
-      "tagline": "Turning a multi-day provisioning process into a repeatable infrastructure workflow.",
-      "description": "Designed and implemented the VM provisioning workflow end-to-end with ManageIQ and embedded Ansible. The workflow validates the request, evaluates hypervisors, reserves an IP through OP ManageCentral, provisions a golden Windows VM, handles DNS and IP transactions, applies configuration, and validates the result. The previous process could take 7 days; the automated workflow provisions a VM in approximately 14 minutes."
-    },
-
-    "syntheticTesting": {
-      "title": "Synthetic & Sanity Testing",
-      "tagline": "Taking post-maintenance validation from 3 customers to 175+ environments.",
-      "description": "Designed and executed automated validation using Azure DevOps, C#, and Playwright. The system checks login behavior, application access, database connectivity, and customer-specific success signals. Customer configuration was moved out of code so new environments could be onboarded without rewriting the tests, with grouped runs supporting large maintenance windows."
-    },
-
-    "configurationDrift": {
-      "title": "Configuration Drift Detection",
-      "tagline": "Finding the server that doesn't match the rest.",
-      "description": "Implemented a configuration comparison system for WinRM-connected Windows servers using Python, PowerShell, Shell, and JavaScript. Rather than relying on manual file inspection, the system uses hashing, parsing, and comparison to identify differences across server state. A fan-out/fan-in workflow processes multiple servers and surfaces customer-specific drift through dashboards for shared and dedicated environments."
-    },
-
-    "databaseWorkflow": {
-      "title": "Primary-to-Reporting Database Workflow Validation",
-      "tagline": "Following an order from the primary database to the reporting layer.",
-      "description": "Designed and executed end-to-end testing for the automated synchronization path between the Primary Database and Reporting Database. Tests covered order creation, primary writes, workflow execution, data transfer, reporting updates, consistency, customer access, failure scenarios, and isolation of the production data layer."
-    },
-
-    "featured": {
-      "title": "AI Product Discovery Assistant",
-      "tagline": "An LLM-powered search experience built around ranking and relevance.",
-      "description": "Built RESTful FastAPI services and an AI-powered product discovery workflow supporting 100+ concurrent queries. Added ranking and relevance logic, automated CI/CD, 85% backend test coverage, and Docker-based deployment."
-    },
-
-    "networkLab": {
-      "title": "AI-Powered Personal Portfolio",
-      "tagline": "A portfolio that can answer questions about the work behind it.",
-      "description": "Built a full-stack portfolio with embeddings, vector retrieval, conversational AI, API authentication, rate limiting, logging, and production deployment."
+    "certifications": {
+      "title": "Certifications",
+      "subtitle": "Neo4j Graph Data Science and Professional certifications, earned May 2025.",
+      "linkLabel": "Open certification {{name}}"
     }
   },
 

@@ -13,9 +13,8 @@ import { HeroSection } from "./sections/HeroSection";
 import { AboutSection } from "./sections/AboutSection";
 import { ExpertiseSection } from "./sections/ExpertiseSection";
 import { ExperienceSection } from "./sections/ExperienceSection";
-import { CertificationsSection } from "./sections/CertificationSection";
 import { ProjectsSection } from "./sections/ProjectsSection";
-import { AcademicSection } from "./sections/AcademicSection";
+import { QualificationsSection } from "./sections/QualificationsSection";
 import { ContactSection } from "./sections/ContactSection";
 import { useLanguage } from "./hooks/useLanguage";
 
@@ -76,8 +75,7 @@ function App() {
           <ProjectsSection />
           <ExpertiseSection />
           <ExperienceSection />
-          <CertificationsSection />
-          <AcademicSection />
+          <QualificationsSection />
           <ContactSection />
         </m.main>
         <Footer />
