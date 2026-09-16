@@ -6,7 +6,10 @@ import { SocialLinks } from "../components/ui/SocialLinks";
 
 export const HeroSection = () => {
   const { t } = useTranslation();
-  // const roles = t("hero.roles", { returnObjects: true }) as string[];
+  const proof = t("hero.proof", { returnObjects: true }) as {
+    value: string;
+    label: string;
+  }[];
 
   return (
     <section id="home" className="hero-full-viewport pb-16 pt-10 md:py-0">
@@ -24,16 +27,21 @@ export const HeroSection = () => {
           <p className="mt-4 max-w-2xl text-xl text-[var(--color-text)] md:text-2xl">
             {t("hero.headline")}
           </p>
-          <ul className="mt-6 flex flex-wrap gap-2">
-            {/* {roles.map((role) => (
-              <li key={role}>
-                <StatusBadge text={role} />
-              </li>
-            ))} */}
-          </ul>
           <p className="mt-6 max-w-2xl text-[var(--color-text-muted)]">
             {t("hero.description")}
           </p>
+          <dl className="mt-7 grid grid-cols-3 gap-4 border-y border-[var(--color-border)] py-5">
+            {proof.map((item) => (
+              <div key={item.label}>
+                <dd className="font-mono text-base font-semibold text-[var(--color-text)] sm:text-lg">
+                  {item.value}
+                </dd>
+                <dt className="mt-1 text-xs leading-tight text-[var(--color-text-muted)]">
+                  {item.label}
+                </dt>
+              </div>
+            ))}
+          </dl>
           <div className="mt-7">
             <HeroActions />
           </div>

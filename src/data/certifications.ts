@@ -5,12 +5,6 @@ export interface CredentialItem {
   url?: string;
 }
 
-export interface CourseCategory {
-  id: string;
-  titleKey: string;
-  courses: CredentialItem[];
-}
-
 export const certifications: CredentialItem[] = [
   {
     id: "neo4j-graph-data-science",
@@ -25,4 +19,3 @@ export const certifications: CredentialItem[] = [
     url: "https://graphacademy.neo4j.com/c/29fd89b6-f087-456c-965b-256d6b3d685f",
   },
 ];
-export const courseCategories: CourseCategory[] = [];

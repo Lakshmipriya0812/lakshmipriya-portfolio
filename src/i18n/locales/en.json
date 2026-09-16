@@ -2,7 +2,7 @@
   "meta": {
     "title": "Lakshmipriya R | DevOps & Cloud Engineering",
     "description": "DevOps engineer working across infrastructure automation, Kubernetes, CI/CD, production validation, and cloud systems."
-  }, 
+  },
 
   "intro": {
     "subtitle": "DEVOPS PORTFOLIO",
@@ -17,12 +17,10 @@
   },
   "navigation": {
     "home": "Home",
-    "about": "About",
     "expertise": "What I Work With",
     "experience": "Experience",
-    "certifications": "Certifications",
     "projects": "Featured Work",
-    "academic": "Education",
+    "qualifications": "Qualifications",
     "contact": "Contact",
     "brand": "DEVOPS"
   },
@@ -31,8 +29,13 @@
     "eyebrow": "DEVOPS • CLOUD • AUTOMATION",
     "hello": "Hi, I'm",
     "name": "Lakshmipriya",
-    "headline": "I automate the work that slows engineering teams down.",
+    "headline": "I turn slow, manual infrastructure work into fast, reliable systems.",
     "description": "I work across infrastructure, deployment pipelines, production testing, and cloud systems. My recent work includes turning multi-day VM provisioning into a one-click workflow, scaling environment validation from 3 to 175+ customers, and building systems that expose configuration and data inconsistencies before they become bigger problems.",
+    "proof": [
+      { "value": "7 days → ~14 min", "label": "VM provisioning time" },
+      { "value": "3 → 175+", "label": "customer environments validated" },
+      { "value": "$700 → $450/mo", "label": "AWS infrastructure cost" }
+    ],
     "featuredProject": "See what I built",
     "contactButton": "Get in touch",
     "location": "Philadelphia, PA • Open to relocation",
@@ -42,38 +45,80 @@
   },
 
   "about": {
-    "title": "A little about how I work",
-    "subtitle": "I like taking messy operational processes and figuring out how to make them predictable.",
-    "paragraph1": "I'm a software and DevOps engineer working across cloud infrastructure, automation, testing, and application development. At AssetWorks, I work with the hosting team on systems that support customer environments in production.",
-    "paragraph2": "A lot of my work starts with a process that has too many manual steps: provisioning a VM, checking an environment after maintenance, comparing configuration across servers, or verifying that data reached the reporting layer correctly. I turn those processes into workflows, pipelines, and checks that can be run consistently.",
-    "paragraph3": "I also enjoy the infrastructure side of engineering—Kubernetes, AWS, Linux, networking, containers, observability, and CI/CD. When something breaks, I want to understand the path that led there and make the next occurrence easier to detect or prevent.",
+    "title": "How I Work",
+    "subtitle": "I bring structure and reliability to complex operational systems.",
+    "paragraph1": "I'm a software and DevOps engineer who turns manual, error-prone operations into automated systems—cutting delivery time and reducing production risk. At AssetWorks, I work with the hosting team on infrastructure that supports customer environments in production.",
+    "paragraph2": "Much of my work begins with a process burdened by manual steps: provisioning a VM, verifying an environment after maintenance, comparing configuration across servers, or confirming that data reached the reporting layer correctly. I convert those processes into workflows, pipelines, and checks that run consistently and at scale.",
+    "paragraph3": "I also work extensively on the infrastructure side of engineering—Kubernetes, AWS, Linux, networking, containers, observability, and CI/CD. When incidents occur, I focus on root-cause analysis and building safeguards against recurrence. I'm also fluent in AI-assisted development tools, which I use to ship tested, maintainable code faster.",
     "facts": [
-      "1.2+ years of internship experience",
-      "DevOps & cloud infrastructure",
-      "Kubernetes, AWS & CI/CD",
-      "Automation & production testing"
+      "VM provisioning cut from 7 days to ~14 minutes",
+      "Production validation scaled from 3 to 175+ environments",
+      "AWS infrastructure cost reduced from $700 to $450/month",
+      "25% faster patient referral processing via graph algorithms"
     ]
   },
 
   "expertise": {
     "title": "What I work with",
-    "subtitle": "A mix of infrastructure, automation, testing, and software development.",
-    "cards": {
-      "cloud": {
-        "title": "Infrastructure & Cloud",
-        "description": "AWS, Kubernetes, EC2, VPC networking, Windows infrastructure, VM provisioning, Terraform, and infrastructure automation."
-      },
-      "cicd": {
-        "title": "Pipelines & Delivery",
-        "description": "Azure DevOps, CI/CD pipelines, automated testing, Docker, deployment workflows, maintenance runs, and environment upgrades."
-      },
-      "ops": {
-        "title": "Production & Validation",
-        "description": "Synthetic testing, configuration drift detection, workflow validation, monitoring, dashboards, log processing, and failure-path testing."
+    "subtitle": "The tools I use to provision infrastructure, automate operational work, validate changes, and understand what is running.",
+    "connector": "Infrastructure → Automation → Delivery & Testing → Observability & Operations → Software",
+    "usedInLabel": "Used in",
+    "impactLabel": "Impact",
+    "categories": {
+      "infrastructure": {
+        "title": "Infrastructure",
+        "tagline": "The environments I provision, configure, and operate.",
+        "usedIn": [
+          "VM provisioning automation",
+          "Kubernetes workloads on EKS",
+          "Production infrastructure & VPC security"
+        ],
+        "impactValue": "7 days → ~14 min",
+        "impactLabel": "VM provisioning time"
       },
       "automation": {
-        "title": "Software & Automation",
-        "description": "Python, C#, JavaScript, TypeScript, React, APIs, automation scripts, data pipelines, and AI-powered applications."
+        "title": "Automation",
+        "tagline": "The repetitive infrastructure work I turn into workflows.",
+        "usedIn": [
+          "End-to-end VM provisioning workflow",
+          "Configuration drift detection across server fleets",
+          "DNS & IP allocation automation"
+        ],
+        "impactValue": "15+ VMs",
+        "impactLabel": "provisioned through the automated workflow"
+      },
+      "delivery": {
+        "title": "Delivery & Testing",
+        "tagline": "The pipelines and checks I use to move changes through environments.",
+        "usedIn": [
+          "Synthetic & sanity testing pipelines",
+          "Production maintenance validation",
+          "Deployment workflows"
+        ],
+        "impactValue": "3 → 175+",
+        "impactLabel": "customer environments validated"
+      },
+      "observability": {
+        "title": "Observability & Operations",
+        "tagline": "The tools I use to see what is happening after deployment.",
+        "usedIn": [
+          "Log processing & anomaly detection pipelines",
+          "Configuration drift dashboards",
+          "Cost & performance monitoring"
+        ],
+        "impactValue": "$700 → $450/mo",
+        "impactLabel": "AWS infrastructure cost"
+      },
+      "software": {
+        "title": "Software",
+        "tagline": "The application and data layer behind the infrastructure.",
+        "usedIn": [
+          "Full-stack SaaS feature development",
+          "Graph algorithm integration (Neo4j)",
+          "Internal tooling & dashboards"
+        ],
+        "impactValue": "25%",
+        "impactLabel": "faster patient referral processing"
       }
     }
   },
@@ -100,9 +145,15 @@
     }
   },
 
-  "academic": {
-    "title": "Education and academic background",
-    "subtitle": "Academic training supporting software engineering, application development, and cloud-focused work.",
+  "caseStudies": {
+    "eyebrow": "02",
+    "title": "Production Engineering Case Studies",
+    "subtitle": "Five production engineering initiatives spanning infrastructure automation, proactive validation, configuration management, data workflow integrity, and cloud platform engineering."
+  },
+
+  "qualifications": {
+    "title": "Education and certifications",
+    "subtitle": "Academic training and verified technical credentials supporting my DevOps and software engineering work.",
     "education": {
       "title": "Education",
       "items": {
@@ -118,69 +169,10 @@
         }
       }
     },
-    "linkedin": {
-      "title": "LinkedIn Activity",
-      "description": "Follow my LinkedIn profile for posts about DevOps, cloud infrastructure, production validation, automation, and engineering projects. Specific post links can be curated here later.",
-      "button": "View LinkedIn profile"
-    }
-  },
-
-  "certifications": {
-    "title": "Certifications and courses",
-    "subtitle": "Verified technical credentials and professional learning.",
-    "certificationsTitle": "Certifications",
-    "certificationLinkLabel": "Open certification {{name}}",
-    "courseLinkLabel": "Open course {{name}}",
-    "courses": {
-      "title": "Completed courses",
-      "itemsCount": "{{count}} items",
-      "categories": {
-        "cloudDevOpsSystems": "Cloud, DevOps and systems",
-        "databasesAnalytics": "Databases and analytics",
-        "processAutomation": "Process automation"
-      }
-    }
-  },
-
-  "projects": {
-    "eyebrow": "03",
-    "title": "Featured Work",
-    "subtitle": "The production problems I've worked on—and the systems I built or tested to solve them.",
-
-    "vmCreation": {
-      "title": "One-click VM Creation Automation",
-      "tagline": "Turning a multi-day provisioning process into a repeatable infrastructure workflow.",
-      "description": "Designed and implemented the VM provisioning workflow end-to-end with ManageIQ and embedded Ansible. The workflow validates the request, evaluates hypervisors, reserves an IP through OP ManageCentral, provisions a golden Windows VM, handles DNS and IP transactions, applies configuration, and validates the result. The previous process could take 7 days; the automated workflow provisions a VM in approximately 14 minutes."
-    },
-
-    "syntheticTesting": {
-      "title": "Synthetic & Sanity Testing",
-      "tagline": "Taking post-maintenance validation from 3 customers to 175+ environments.",
-      "description": "Designed and executed automated validation using Azure DevOps, C#, and Playwright. The system checks login behavior, application access, database connectivity, and customer-specific success signals. Customer configuration was moved out of code so new environments could be onboarded without rewriting the tests, with grouped runs supporting large maintenance windows."
-    },
-
-    "configurationDrift": {
-      "title": "Configuration Drift Detection",
-      "tagline": "Finding the server that doesn't match the rest.",
-      "description": "Implemented a configuration comparison system for WinRM-connected Windows servers using Python, PowerShell, Shell, and JavaScript. Rather than relying on manual file inspection, the system uses hashing, parsing, and comparison to identify differences across server state. A fan-out/fan-in workflow processes multiple servers and surfaces customer-specific drift through dashboards for shared and dedicated environments."
-    },
-
-    "databaseWorkflow": {
-      "title": "Primary-to-Reporting Database Workflow Validation",
-      "tagline": "Following an order from the primary database to the reporting layer.",
-      "description": "Designed and executed end-to-end testing for the automated synchronization path between the Primary Database and Reporting Database. Tests covered order creation, primary writes, workflow execution, data transfer, reporting updates, consistency, customer access, failure scenarios, and isolation of the production data layer."
-    },
-
-    "featured": {
-      "title": "AI Product Discovery Assistant",
-      "tagline": "An LLM-powered search experience built around ranking and relevance.",
-      "description": "Built RESTful FastAPI services and an AI-powered product discovery workflow supporting 100+ concurrent queries. Added ranking and relevance logic, automated CI/CD, 85% backend test coverage, and Docker-based deployment."
-    },
-
-    "networkLab": {
-      "title": "AI-Powered Personal Portfolio",
-      "tagline": "A portfolio that can answer questions about the work behind it.",
-      "description": "Built a full-stack portfolio with embeddings, vector retrieval, conversational AI, API authentication, rate limiting, logging, and production deployment."
+    "certifications": {
+      "title": "Certifications",
+      "subtitle": "Neo4j Graph Data Science and Professional certifications, earned May 2025.",
+      "linkLabel": "Open certification {{name}}"
     }
   },
 
