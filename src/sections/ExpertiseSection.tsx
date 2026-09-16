@@ -1,14 +1,17 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { m } from "motion/react";
+import { ChevronDown } from "lucide-react";
 import { Container } from "../components/common/Container";
 import { SectionReveal } from "../components/common/SectionReveal";
 import { SectionHeading } from "../components/common/SectionHeading";
 import { TechChip } from "../components/common/TechChip";
-import { BentoCard } from "../components/ui/BentoCard";
 import { expertiseCategories } from "../data/expertise";
 
 export const ExpertiseSection = () => {
   const { t } = useTranslation();
+  const [openId, setOpenId] = useState<string | null>(
+    expertiseCategories[0]?.id ?? null,
+  );
 
   return (
     <SectionReveal
@@ -21,40 +24,91 @@ export const ExpertiseSection = () => {
           title={t("expertise.title")}
           subtitle={t("expertise.subtitle")}
           eyebrow="03"
-          subtitleClassName="min-[980px]:max-w-none min-[980px]:whitespace-nowrap"
         />
-        <div className="grid items-stretch gap-4 md:grid-cols-2 md:auto-rows-fr">
-          {expertiseCategories.map((category, index) => (
-            <m.div
-              key={category.id}
-              className="h-full"
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.16 }}
-              transition={{
-                duration: 0.4,
-                ease: "easeOut",
-                delay: index * 0.06,
-              }}
-            >
-              <BentoCard
-                variant="expertise"
-                className="flex h-full flex-col p-5"
+        <p className="mb-8 font-mono text-xs uppercase tracking-[0.14em] text-[var(--color-text-subtle)] md:mb-10">
+          {t("expertise.connector")}
+        </p>
+        <div className="grid gap-3">
+          {expertiseCategories.map((category, index) => {
+            const isOpen = openId === category.id;
+            const usedIn = t(category.usedInKey, {
+              returnObjects: true,
+            }) as string[];
+
+            return (
+              <div
+                key={category.id}
+                className={`overflow-hidden rounded-xl border bg-[color-mix(in_srgb,var(--color-surface)_86%,transparent)] transition-colors duration-200 [@media(hover:hover)_and_(pointer:fine)]:hover:border-[var(--color-border-active)] ${isOpen ? "border-[var(--color-border-active)]" : "border-[var(--color-border)]"}`}
               >
-                <h3 className="text-xl font-semibold text-[var(--color-text)]">
-                  {t(category.titleKey)}
-                </h3>
-                <p className="mt-3 text-sm text-[var(--color-text-muted)]">
-                  {t(category.descriptionKey)}
-                </p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {category.technologies.map((technology) => (
-                    <TechChip key={technology} label={technology} />
-                  ))}
-                </div>
-              </BentoCard>
-            </m.div>
-          ))}
+                <button
+                  type="button"
+                  aria-expanded={isOpen}
+                  onClick={() => setOpenId(isOpen ? null : category.id)}
+                  className="flex w-full flex-wrap items-center justify-between gap-4 p-5 text-left"
+                >
+                  <div>
+                    <div className="flex items-center gap-3">
+                      <span className="font-mono text-xs text-[var(--color-cyan)]">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+                      <h3 className="text-lg font-semibold text-[var(--color-text)] md:text-xl">
+                        {t(category.titleKey)}
+                      </h3>
+                    </div>
+                    <p className="mt-1 text-sm text-[var(--color-text-muted)]">
+                      {t(category.taglineKey)}
+                    </p>
+                  </div>
+                  <div className="ml-auto flex items-center gap-6">
+                    <div className="text-right">
+                      <p className="font-mono text-sm font-semibold text-[var(--color-text)]">
+                        {t(category.impactValueKey)}
+                      </p>
+                      <p className="text-xs text-[var(--color-text-subtle)]">
+                        {t(category.impactLabelKey)}
+                      </p>
+                    </div>
+                    <ChevronDown
+                      size={18}
+                      className={`shrink-0 text-[var(--color-text-subtle)] transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+                      aria-hidden="true"
+                    />
+                  </div>
+                </button>
+
+                {isOpen ? (
+                  <div className="grid gap-5 border-t border-[var(--color-border)] p-5 pt-4 md:grid-cols-2">
+                    <div className="flex flex-wrap gap-2">
+                      {category.technologies.map((technology) => (
+                        <TechChip key={technology} label={technology} />
+                      ))}
+                    </div>
+                    <div>
+                      <h4 className="font-mono text-[11px] uppercase tracking-[0.14em] text-[var(--color-text-subtle)]">
+                        {t("expertise.usedInLabel")}
+                      </h4>
+                      <ul className="mt-2 grid gap-1.5">
+                        {usedIn.map((item) => (
+                          <li
+                            key={item}
+                            className="flex items-start gap-2 text-sm text-[var(--color-text-muted)]"
+                          >
+                            <span
+                              className="mt-0.5 text-[var(--color-cyan)]"
+                              aria-hidden="true"
+                            >
+                              →
+                            </span>
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                ) : null}
+              </div>
+            );
+          })}
         </div>
       </Container>
     </SectionReveal>
